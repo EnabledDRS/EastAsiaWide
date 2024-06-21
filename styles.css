@@ -1,0 +1,281 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Coordinates container styles */
+.coordinates-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.coordinates-container input {
+    padding: 0 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    height: 33px;
+    box-sizing: border-box;
+}
+
+.coordinates-container button {
+    padding: 0 5px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 33px;
+    box-sizing: border-box;
+}
+
+.coordinates-container button:hover {
+    background-color: #0056b3;
+}
+
+.coordinates-container button:active {
+    transform: scale(0.95);
+}
+
+.coordinates-container button:focus {
+    outline: none;
+    background-color: #007bff;
+}
+
+/* Controls container */
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Slider wrapper */
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+/* Slider container */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 5px auto 0 auto; /* Center the slider container and add top margin */
+}
+
+/* Time slider */
+#timeSlider {
+    width: 100%;
+}
+
+/* Speed controls */
+.speed-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px; /* Add 5px space above the speed controls */
+}
+
+/* Speed display container */
+#speedDisplayContainer {
+    width: 120px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 0 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    height: 33px; /* Set height to 33px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+button {
+    padding: 0 5px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 33px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+    background-color: #007bff;
+}
+
+/* Save button styles */
+#saveButton {
+    padding: 0 5px;
+    font-size: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 33px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+#saveButton:hover {
+    background-color: #218838;
+}
+
+#saveButton:active {
+    transform: scale(0.95);
+}
+
+#saveButton:focus {
+    outline: none;
+    background-color: #28a745;
+}
+
+/* Dropdown styles */
+select {
+    padding: 5px;
+    font-size: 14px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 33px; /* Set height to 33px */
+}
+
+select option {
+    background-color: #333;
+    color: white;
+}
+
+/* Label styles */
+label {
+    color: #fff;
+}
+
+/* Image container */
+.image-container {
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+/* Image */
+#sliderImage {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+}
+
+/* Refresh container */
+.refresh-container {
+    text-align: right;
+    font-size: 12px;
+    color: gray;
+}
+
+/* Slider label */
+.slider-label {
+    font-size: 14px;
+    color: #fff;
+    width: 30px;
+}
+
+.slider-label.left {
+    margin-right: 5px;
+}
+
+.slider-label.right {
+    margin-left: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .controls-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .image-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    #sliderImage {
+        max-height: 60vh;
+    }
+
+    .slider-wrapper {
+        max-width: 100%;
+    }
+
+    .slider-container {
+        width: 80%;
+    }
+
+    .refresh-container {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
